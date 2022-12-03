@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		AA27AE95293BBE9000B0910E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AE94293BBE9000B0910E /* AppDelegate.swift */; };
 		AA27AE97293BBE9000B0910E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AE96293BBE9000B0910E /* SceneDelegate.swift */; };
-		AA27AE99293BBE9000B0910E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AE98293BBE9000B0910E /* ViewController.swift */; };
 		AA27AE9C293BBE9000B0910E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA27AE9A293BBE9000B0910E /* Main.storyboard */; };
 		AA27AE9E293BBE9100B0910E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA27AE9D293BBE9100B0910E /* Assets.xcassets */; };
 		AA27AEA1293BBE9100B0910E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA27AE9F293BBE9100B0910E /* LaunchScreen.storyboard */; };
+		AA27AEAB293BC28900B0910E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AEAA293BC28900B0910E /* HomeViewController.swift */; };
+		AA27AEAD293BC5DC00B0910E /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AEAC293BC5DC00B0910E /* MenuOption.swift */; };
+		AA27AEAF293BCABA00B0910E /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AEAE293BCABA00B0910E /* MenuOptionCell.swift */; };
+		AA27AEB1293BD87000B0910E /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27AEB0293BD87000B0910E /* GamesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA27AE91293BBE9000B0910E /* GOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA27AE94293BBE9000B0910E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA27AE96293BBE9000B0910E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA27AE98293BBE9000B0910E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA27AE9B293BBE9000B0910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA27AE9D293BBE9100B0910E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA27AEA0293BBE9100B0910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA27AEA2293BBE9100B0910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA27AEAA293BC28900B0910E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA27AEAC293BC5DC00B0910E /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		AA27AEAE293BCABA00B0910E /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		AA27AEB0293BD87000B0910E /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		AA27AE93293BBE9000B0910E /* GOW */ = {
 			isa = PBXGroup;
 			children = (
+				AA27AEA8293BBF0600B0910E /* Fonts */,
 				AA27AE94293BBE9000B0910E /* AppDelegate.swift */,
 				AA27AE96293BBE9000B0910E /* SceneDelegate.swift */,
-				AA27AE98293BBE9000B0910E /* ViewController.swift */,
 				AA27AE9A293BBE9000B0910E /* Main.storyboard */,
 				AA27AE9D293BBE9100B0910E /* Assets.xcassets */,
 				AA27AE9F293BBE9100B0910E /* LaunchScreen.storyboard */,
 				AA27AEA2293BBE9100B0910E /* Info.plist */,
+				AA27AEAA293BC28900B0910E /* HomeViewController.swift */,
+				AA27AEAC293BC5DC00B0910E /* MenuOption.swift */,
+				AA27AEAE293BCABA00B0910E /* MenuOptionCell.swift */,
+				AA27AEB0293BD87000B0910E /* GamesViewController.swift */,
 			);
 			path = GOW;
+			sourceTree = "<group>";
+		};
+		AA27AEA8293BBF0600B0910E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA27AE99293BBE9000B0910E /* ViewController.swift in Sources */,
 				AA27AE95293BBE9000B0910E /* AppDelegate.swift in Sources */,
+				AA27AEAF293BCABA00B0910E /* MenuOptionCell.swift in Sources */,
+				AA27AEAD293BC5DC00B0910E /* MenuOption.swift in Sources */,
 				AA27AE97293BBE9000B0910E /* SceneDelegate.swift in Sources */,
+				AA27AEB1293BD87000B0910E /* GamesViewController.swift in Sources */,
+				AA27AEAB293BC28900B0910E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
