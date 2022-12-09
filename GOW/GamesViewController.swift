@@ -24,17 +24,32 @@ class GamesViewController: UIViewController {
         
     }
     
+    /// Método que captura el evento de derecha a la izquierda
+    /// - Parameter sender: Cualquira
     @IBAction func rightSwipeDone(_ sender: Any) {
         print("Right swipe")
+        
+        if gamePageControl.currentPage == 0 {
+            print("Se vuelve al final")
+            gamePageControl.currentPage = posters.count-1
+            gamePosterImage.image = UIImage(named: String(gamePageControl.currentPage))
+        } else {
+            gamePageControl.currentPage = gamePageControl.currentPage - 1
+            gamePosterImage.image = UIImage(named: String(gamePageControl.currentPage))
+        }
+        
     }
     
+    /// Método que captura el evento touch de la izquierda a la derecha
+    /// - Parameter sender: Cualquira
     @IBAction func leftSwipeDone(_ sender: Any) {
         print("Left swipe")
         
         if gamePageControl.currentPage == posters.count-1 {
+           print("Se vuelve al inicio")
            gamePageControl.currentPage = 0
            gamePosterImage.image = UIImage(named: String(gamePageControl.currentPage))
-        }else{
+        } else {
            gamePageControl.currentPage = gamePageControl.currentPage + 1
            gamePosterImage.image = UIImage(named: String(gamePageControl.currentPage))
         }
